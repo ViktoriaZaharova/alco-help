@@ -1,0 +1,55 @@
+/*==========  footer  ==========*/
+footer {
+  background: #343641;
+  color: #fff;
+  font-size: 15px; }
+  footer .header-box {
+    color: rgba(217, 217, 217, 0.87);
+    margin: 0 0 35px; }
+    footer .header-box:first-child {
+      margin: 0 0 35px; }
+    footer .header-box a, footer .header-box p {
+      color: #fff; }
+  footer .phone {
+    font-size: 18px; }
+  footer .btn-call {
+    margin: 20px 0 0;
+    width: 100%;
+    max-width: none; }
+  footer .menu {
+    font-size: 15px;
+    padding: 0;
+    background: transparent;
+    margin: 0 0 35px; }
+    footer .menu li:first-child a {
+      padding-left: 0; }
+    footer .menu li:last-child a {
+      padding-right: 0; }
+    footer .menu li a {
+      color: #fff; }
+      footer .menu li a:hover {
+        color: #7CD54C; }
+
+.submenu-box {
+  line-height: 27px; }
+  .submenu-box li a {
+    color: #A2A2A2; }
+    .submenu-box li a:hover {
+      color: #7CD54C; }
+
+.footer-top {
+  padding: 22px 0 59px; }
+
+.footer-bottom {
+  border-top: 1px solid #686868;
+  padding: 14px 0 17px; }
+
+.links-politics {
+  color: #656565;
+  font-size: 15px;
+  text-decoration: underline;
+  line-height: 198.68%; }
+  .links-politics:hover {
+    color: #fff; }
+
+/*==========  footer end  ==========*/

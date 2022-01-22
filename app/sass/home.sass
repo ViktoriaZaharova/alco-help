@@ -1,0 +1,710 @@
+@import "vars"
+
+/*==========  section home  ==========*/
+.home
+  margin: -5px 0 0
+
+.home-img
+  max-width: 569px
+  min-width: 569px
+  height: 100%
+  border-radius: 5px
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  float: right
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.home-content
+  background: $accent
+  border-radius: 5px 0 0 5px
+  width: 100%
+  height: 100%
+  z-index: 1
+  position: relative
+  color: #fff
+  padding: 60px 8px 63px 97px
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: -95px
+    height: 100%
+    width: 95px
+    clip-path: polygon(0 0, 0% 100%, 101% 0)
+    background: $accent
+    border:
+      radius: 0 5px 5px 0
+
+  .box-text
+    margin: 25px 0
+
+  .btn
+    padding: 0 24px
+
+/*==========  section home end  ==========*/
+
+
+
+/*==========  section advantages ==========*/
+.advantages-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  background: #fff
+  border-radius: 5px
+  padding: 38px 140px 35px 93px
+
+.advantages-box
+  display: flex
+  align-items: flex-start
+
+  h3
+    margin: 0 0 8px
+    color: #000
+
+  .box-text
+    font-size: 15px
+    line-height: 20px
+    max-width: 160px
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 37px
+    height: 37px
+
+  &__body
+    width: calc(100% - 37px)
+    padding: 0 0 0 12px
+/*==========  section advantages end  ==========*/
+
+
+
+/*==========  section house-call ==========*/
+.house-call
+  margin: 45px 0 84px
+
+.house-call-wrapper
+  width: 100%
+  background: #fff
+  border-radius: 5px
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.house-call__image
+  position: relative
+  max-width: 533px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 5px
+  background: url("../img/bg1.jpeg") no-repeat center
+    size: cover
+
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    bottom: 0
+    height: 100%
+    width: 50px
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%)
+    background: #fff
+
+  img
+    max-width: 278px
+    margin: -28px auto 0
+
+.house-call__content
+  width: calc(100% - 533px)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  position: relative
+  padding: 42px 20px 37px 135px
+
+  .box-text
+    margin: 16px 0 33px
+    max-width: 320px
+
+  .btn
+    padding: 0 31px
+
+
+.around-the-clock
+  position: absolute
+  border-radius: 50%
+  background: $accent
+  color: rgba(255, 255, 255, 0.87)
+  font-size: 20px
+  font-weight: bold
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  right: 0
+  top: -23px
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  width: 73px
+  height: 73px
+/*==========  section house-call end  ==========*/
+
+
+/*==========  section stages-exit ==========*/
+.stages-exit
+  .box-text
+    margin: 11px auto 50px
+    font-size: 18px
+    color: rgba(35, 35, 35, 0.87)
+    line-height: 116.2%
+
+.stages-exit-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.stages-exit-box
+  text-align: center
+  margin: 0 0 50px
+  position: relative
+  max-width: 190px
+  width: 100%
+  color: #686868
+  font-size: 15px
+  line-height: 20px
+
+  &:before
+    content: ''
+    position: absolute
+    top: 35px
+    right: -36px
+    width: 36px
+    height: 18px
+    background: url("../img/arrow-right.svg") no-repeat center
+      size: 100%
+
+  &__icon
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    background: $accent
+    margin: 0 auto 13px
+    width: 70px
+    height: 70px
+
+  &:last-child
+    &:before
+      display: none
+/*==========  section stages-exit end  ==========*/
+
+
+
+/*==========  section advantages-my ==========*/
+.advantages-my
+  &__content
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+  h2
+    max-width: 240px
+
+.advantages-my-box
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 22px 15px
+  border-radius: 5px
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04)
+  height: 100%
+  font-size: 15px
+  line-height: 20px
+
+  &__icon
+    margin: 0 auto 17px
+    height: 54px
+
+    img
+      max-height: 100%
+/*==========  section advantages-my end  ==========*/
+
+
+
+/*==========  section indicators ==========*/
+.indicators-content
+  padding: 50px 0 17px
+
+  h2
+    margin: 0 0 50px
+    max-width: 462px
+
+.indicators-box
+  margin: 0 0 40px
+  display: flex
+  align-items: flex-start
+
+  &__num
+    color: $accent
+    width: 30px
+    min-width: 30px
+    font-size: 38px
+    font-weight: bold
+    line-height: 116.2%
+    margin: -5px 0 0
+
+  &__body
+    width: calc(100% - 30px)
+    padding: 0 0 0 10px
+    color: #686868
+    font-size: 15px
+    line-height: 20px
+
+    h3
+      color: #232323
+      font-weight: bold
+      font-size: 15px
+
+    .box-text
+      margin: 10px 0 0
+
+.indicators-img
+  position: relative
+  background: url("../img/bg2.png") no-repeat center
+    size: cover
+  min-width: 896px
+  height: 100%
+  border-radius: 5px
+  display: flex
+  align-items: flex-end
+  justify-content: flex-end
+
+  img
+    min-width: 1048px
+    margin: 30px 0 -40px -174px
+    position: relative
+    z-index: 1
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    height: 100%
+    width: 82px
+    background: #fff
+    clip-path: polygon(0 0, 0% 100%, 100% 100%)
+
+/*==========  section indicators end  ==========*/
+
+/*==========  section seo-section ==========*/
+.seo-section
+  padding: 88px 0 36px
+  h2
+    max-width: 240px
+/*==========  section seo-section end  ==========*/
+
+
+
+/*==========  section preparations ==========*/
+.preparations
+  margin: 0 0 72px
+
+.preparations-box
+  width: 100%
+  height: 100%
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+  background: #fff
+  border-radius: 5px
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04)
+  padding: 15px
+
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: auto
+    height: 103px
+
+    img
+      max-height: 100%
+
+/*==========  section preparations end  ==========*/
+
+
+
+/*==========  section doctors ==========*/
+.doctors
+  padding: 55px 0 73px
+
+  .box-text
+    margin: 14px auto 45px
+
+  .btn
+    padding: 0 42px
+    margin: 0 auto
+
+.doctors-box
+  margin: 0 auto 30px
+  text-align: center
+  width: 100%
+  max-width: 255px
+
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 100%
+    height: 257px
+    border-radius: 5px
+    margin: 0 auto 23px
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__body
+    color: #686868
+    font-size: 15px
+    line-height: 20px
+
+    ul
+      margin: 13px auto 0
+
+  h3
+    font-size: 21px
+    line-height: 116.2%
+    color: rgba(35, 35, 35, 0.87)
+
+/*==========  section doctors end  ==========*/
+
+
+
+/*==========  section certificates ==========*/
+.certificates
+  padding: 62px 0 90px
+
+.certificate-box
+  margin: 50px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 242px
+  width: 100%
+
+  img
+    width: 100%
+
+.certificate-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-around
+  flex-wrap: wrap
+
+/*==========  section certificates end  ==========*/
+
+
+
+
+/*==========  section prices ==========*/
+.prices
+  margin: 0 0 97px
+
+.btn-all-price
+  margin: 38px auto 0
+
+.table-price
+  margin: 38px 0 0
+  font-size: 15px
+  .box-text
+    font-weight: normal
+    p
+      margin: 0
+
+
+.table
+  width: 100%
+  background: #fff
+  border-radius: 5px
+
+.thead
+  width: 100%
+  color: #fff
+  font-size: 15px
+  line-height: 20px
+  font-weight: bold
+  .td
+    background: $accent
+
+    &:first-child
+      border-radius: 5px 0px 0px 5px
+
+    &:last-child
+
+      margin: 0 0 0 auto
+      border-radius: 0px 5px 5px 0px
+
+.td
+  padding: 23px 30px 22px
+  &:first-child
+    width: 68%
+  &:last-child
+    width: calc(32% - 2px)
+
+.tbody
+  padding: 0 34px 23px
+  .tr
+    align-items: center
+  .td
+    padding: 17px 0
+    display: flex
+    align-items: center
+    &:first-child
+      width: 69%
+    &:last-child
+      width: calc(31% - 2px)
+      padding: 17px 0 17px 30px
+  .btn
+    margin: 0 0 0 auto
+    max-width: 126px
+    height: 35px
+    width: 100%
+  h4
+    color: #232323
+    font-weight: bold
+    span
+      font-weight: normal
+
+.tr
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  border-bottom: 1px solid #F0F0F0
+  &:last-child
+    border: none
+/*==========  section prices end  ==========*/
+
+
+
+/*==========  section callback-section ==========*/
+.callback-section__img
+  position: relative
+  min-width: 899px
+  height: 100%
+  max-height: 507px
+  float: right
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  border-radius: 5px
+  margin: 0 35px 0 0
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &:before
+    content: ''
+    position: absolute
+    bottom: -1px
+    right: 0
+    height: 100%
+    width: 85px
+    background: #fff
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%)
+
+.callback-section__content
+  padding: 56px 0
+  h2
+    margin: 0 auto 24px
+    text-align: center
+/*==========  section callback-section end  ==========*/
+
+
+
+/*==========  section question ==========*/
+.question
+  margin: 67px 0 102px
+
+.accordion
+  margin: 45px auto 0
+  background: #fff
+  width: 100%
+  border-radius: 5px
+  padding: 25px 65px
+  .card
+    font-size: 15px
+    background: transparent
+    border: none
+      bottom: 1px solid #F0F0F0
+      radius: 0
+    margin: 0
+    padding: 16px 19px 16px 22px
+    position: relative
+    &:last-child
+      border: none
+    &:not(:last-of-type)
+      border-bottom: 1px solid #F0F0F0
+  .card-header
+    background: transparent
+    border: none
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0
+    cursor: pointer
+    font-weight: bold
+    color: $accent
+  .btn-arrow
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0,-50%) rotate(-180deg)
+    width: 19px
+    min-width: 19px
+    height: 12px
+    fill: #7CD54C
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .card-header.collapsed
+    color: #232323
+    .btn-arrow
+      transform: translate(0,-50%) rotate(0)
+      fill: #C4C4C4
+  .card-body
+    padding: 20px 0
+    max-width: 876px
+    .box-text
+      font-size: 15px
+/*==========  section question end  ==========*/
+
+
+
+/*==========  section history-clients ==========*/
+.history-clients
+  padding: 66px 0 94px
+  h2
+    color: #fff
+    margin: 0 auto 49px
+
+.history-clients-slider-box
+  width: 100%
+  background: #fff
+  border-radius: 5px
+  padding: 39px 39px 39px 43px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border-radius: 50%
+    width: 121px
+    height: 121px
+    background: #C4C4C4
+  &__body
+    width: calc(100% - 121px)
+    padding: 0 0 0 30px
+    h3
+      color: $accent
+      font-size: 21px
+    .box-text
+      margin: 21px 0 17px
+/*==========  section history-clients end  ==========*/
+
+
+
+/*==========  section company-in-numbers ==========*/
+.company-in-numbers
+  padding: 56px 0 50px
+  &__content
+    padding: 0 0 0 30px
+  h2
+    margin: 0 auto 33px
+
+.company-in-numbers-box
+  margin: 0 0 40px
+  color: #232323
+  h4
+    color: $accent
+    font-weight: bold
+    font-size: 38px
+    line-height: 116.2%
+
+.video-box
+  width: 100%
+  height: 296px
+  background: #22231E
+
+
+/*==========  section company-in-numbers end  ==========*/
+
+
+/*==========  section partners ==========*/
+.partners
+  padding: 60px 0 0
+  h2
+    margin: 0 auto 34px
+
+.partners-box
+  text-align: center
+  margin: 0 0 45px
+  &__icon
+    margin: 0 auto 17px
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 99px
+    img
+      max-height: 100%
+  .box-text
+    font-size: 13px
+    line-height: 18px
+/*==========  section partners end  ==========*/
+
+
+/*==========  section reviews  ==========*/
+.reviews
+  padding: 35px 0 140px
+
+.reviews-img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+    width: 100%
+/*==========  section reviews end  ==========*/

@@ -1,0 +1,145 @@
+@import "vars"
+
+/*==========  header  ==========*/
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 160px
+  width: 100%
+
+  img
+    width: 100%
+
+
+.name-company
+  max-width: 200px
+  width: 100%
+  color: $accent
+  font-size: 20px
+  line-height: 116.2%
+  font-weight: bold
+  margin: 0 auto 0 0
+
+.btn-burger
+  display: none
+  flex-direction: column
+  align-items: flex-start
+  width: 24px
+  cursor: pointer
+
+  span
+    background: $green
+    border-radius: 3px
+    display: block
+    margin: 0 0 6px
+    height: 3px
+    width: 100%
+
+    &:nth-child(2)
+      width: 15px
+
+    &:last-child
+      margin: 0
+
+.header-box
+  display: flex
+  align-items: flex-start
+  font-size: 15px
+  margin: 0 0 0 70px
+
+  &:first-child
+    margin: 0
+
+  p
+    font-weight: bold
+    color: #000
+
+  &__icon
+    fill: $green
+    margin: 0 12px 0 0
+    width: 18px
+    height: 19px
+    min-width: 18px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  a
+    color: #232323
+
+.phone
+  font-size: 18px
+  font-weight: bold
+
+.btn-call
+  margin: 0 0 0 35px
+  height: 35px
+  padding: 0
+  max-width: 160px
+  width: 100%
+
+.header-bottom
+  margin: 3px 0 0
+
+.menu
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  background: #fff
+  border-radius: 5px
+  padding: 15px 0 19px
+  font-size: 15px
+  line-height: 20px
+  font-weight: bold
+  li
+    flex: auto
+    border-right: 1px solid #6DE02E
+    &:last-child
+      border: none
+    a
+      padding: 0 22px
+      text-align: center
+      color: #000
+      &:hover
+        color: $accent
+
+.dropdown-toggle-my
+  width: 100%
+  border-radius: 5px 5px 0 0
+  height: 37px
+  text-transform: uppercase
+  font-size: 15px
+  padding: 0 13px
+  &:after
+    display: none
+
+.dropdown-toggle__text
+  margin: 0 auto
+
+.dropdown-menu__sub
+  display: none
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle
+  background: #2B51B5
+  .btn-arrow
+    opacity: 0
+
+.dropdown-menu
+  margin: 0
+  background: #fff
+  border: none
+    radius: 5px
+  box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.11)
+  width: 100%
+  padding: 0
+
+.submenu
+/*==========  header end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
