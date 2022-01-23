@@ -90,6 +90,18 @@
   .accordion .card-body
     padding: 10px 0 0
 
+  .list-areas
+    padding: 0 10px 0 0
+
+  .list-areas:last-child
+    padding: 0 0 0 10px
+
+  .areas-content__body
+    padding: 20px 10px
+
+  .areas
+    margin: 0 0 50px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 
@@ -299,6 +311,55 @@
   .footer-top
     padding: 59px 0 0
 
+  .error-page-wrapper
+    text-align: center
+    padding: 40px 0
+    h1
+      text-align: center
+    .box-text
+      margin: 0 auto
+    .btn
+      margin: 20px auto 0
+
+  .error-page
+    margin: 40px 0
+
+  .navigation-page
+    margin: 11px 0 31px
+
+  .doctor-responsible
+    margin: 32px 0 0
+
+  .service-section-wrapper
+    padding: 29px 10px 47px
+    .box-text
+      margin: 17px 0 20px
+
+  .service-section
+    margin: 0 0 52px
+
+  .treatment
+    h2
+      margin: 0 0 33px
+
+  .quote
+    margin: 20px 0 30px
+    padding: 45px 25px 34px
+    text-align: left
+
+  .areas-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .areas-map
+    width: 100%
+    height: 304px
+
+  .areas-content
+    width: 100%
+    &__head
+      padding: 17px 23px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .company-in-numbers
@@ -306,8 +367,6 @@
 
   .header-top
     padding: 5px 0 9px
-
-
 
   header
     .menu, .btn-call
@@ -515,6 +574,15 @@
     right: 10px
     top: 15px
 
+  .treatment-img
+    margin: 0 0 32px
+
+  .stages-exit-text .list-arrow
+    margin: 30px 0 20px
+
+  .price-service
+    margin: 0 0 18px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
   .stages-exit-box
@@ -584,6 +652,20 @@
       max-width: 160px
       margin: 0 auto
 
+  .error-page-wrapper h1
+    font-size: 80px
+
+  .error-page-wrapper .box-text
+    font-size: 15px
+    line-height: normal
+
+  .list-areas
+    border: none
+    display: none
+    width: 100%
+    &:nth-child(-n+1)
+      display: block
+
 @media only screen and (max-width : 480px)
   .btn-burger
     margin: 0 0 0 70px
@@ -605,7 +687,8 @@
   .btn-burger
     margin: 0 0 0 40px
 
-
+  .treatment-img
+    height: 169px
 
 @media only screen and (max-width : 370px)
   .indicators-img

@@ -314,3 +314,47 @@ h3
 .slick-next
   right: -51px
 
+/*==========  breadcrumb-nav  ==========*/
+.navigation-page
+  margin: 17px 0 18px
+  .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle
+    background: #D9D9D9
+    color: #929292
+  .btn-secondary:not(:disabled):not(.disabled).active .btn-arrow, .btn-secondary:not(:disabled):not(.disabled):active .btn-arrow, .show > .btn-secondary.dropdown-toggle .btn-arrow
+    opacity: 1
+    transform: rotate(180deg)
+
+.breadcrumb-nav
+  width: 100%
+  background: transparent
+  padding: 0
+  border: none
+    radius: 0
+
+.breadcrumb
+  margin: 0
+  background: transparent
+  padding: 0
+  border-radius: 0
+  color: #A2A2A2
+  font-size: 12px
+  a
+    color: #A2A2A2
+    display: flex
+    align-items: center
+    &:after
+      content: ''
+      margin: 0 5px
+      width: 14px
+      height: 8px
+      background: url("../img/arrow-list-green.svg") no-repeat center
+        size: 100%
+
+.breadcrumb-item + .breadcrumb-item
+  padding: 0
+  &:before
+    display: none
+
+.breadcrumb-item.active
+  color: #A2A2A2
+/*==========  breadcrumb-nav end  ==========*/

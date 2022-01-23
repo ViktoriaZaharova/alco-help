@@ -47,3 +47,41 @@ $(window).on('load resize', function() {
     }
 });
 // slick active
+
+//плавный скролл
+$(document).ready(function () {
+    $('.go_to').click(function (e) {
+        e.preventDefault();
+        var scroll_el = $(this).attr('href');
+        if ($(scroll_el).length !== 0) {
+            $('html, body').animate({
+                scrollTop: $(scroll_el).offset().top
+            }, 500);
+        }
+        return false;
+    });
+});
+//плавный скролл end
+
+// show list all
+$('.btn-toggle').on('click', function(e){
+    e.preventDefault();
+
+    var
+        $this = $(this),
+        content = $(this).parents().find('.list-areas');
+
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.find('.btn-text').html('Скрыть');
+
+        content.slideDown();
+    } else {
+        $this.removeClass('trigger');
+        $this.find('.btn-text').html('Весь список');
+
+        content.slice(1).slideUp();
+    }
+});
+// show list all

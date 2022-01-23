@@ -1,0 +1,36 @@
+/*==========  404  ==========*/
+.error-page {
+  margin: 95px auto 136px; }
+
+.error-page-wrapper {
+  width: 100%;
+  -webkit-box-shadow: 0 4px 27px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 4px 27px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+  padding: 81px 0; }
+  .error-page-wrapper h1 {
+    color: #2B51B5;
+    font-size: 152px;
+    font-weight: bold; }
+
+.error-page__content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .error-page__content .btn {
+    margin: 28px 0 0; }
+  .error-page__content .box-text {
+    max-width: 436px;
+    line-height: 25px;
+    font-size: 18px; }
+
+/*==========  404 end  ==========*/
