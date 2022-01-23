@@ -147,7 +147,7 @@
   .house-call__image:before {
     content: '';
     position: absolute;
-    right: 0;
+    right: -1px;
     bottom: 0;
     height: 100%;
     width: 50px;
@@ -265,21 +265,22 @@
 
 /*==========  section stages-exit end  ==========*/
 /*==========  section advantages-my ==========*/
-.advantages-my__content {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.advantages-my h2 {
-  max-width: 240px; }
+.advantages-my {
+  margin: 0 0 66px; }
+  .advantages-my__content {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .advantages-my h2 {
+    max-width: 240px; }
 
 .advantages-my-box {
   text-align: center;
@@ -386,6 +387,8 @@
 /*==========  section preparations ==========*/
 .preparations {
   margin: 0 0 72px; }
+  .preparations h2 {
+    margin: 0 0 30px; }
 
 .preparations-box {
   width: 100%;
@@ -618,7 +621,7 @@
     content: '';
     position: absolute;
     bottom: -1px;
-    right: 0;
+    right: -1px;
     height: 100%;
     width: 85px;
     background: #fff;

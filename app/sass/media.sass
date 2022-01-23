@@ -1,0 +1,630 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .name-company
+    font-size: 15px
+    max-width: 150px
+
+  header
+    .header-box
+      margin: 0 0 0 20px
+    .btn-call
+      margin: 0 0 0 10px
+
+  .menu li a
+    padding: 0 10px
+
+  .home-content
+    padding: 30px 20px 30px 40px
+
+  h1
+    font-size: 28px
+
+
+  .advantages-wrapper
+    padding: 20px 30px
+
+  .house-call__content
+    padding: 30px 20px 30px 40px
+
+  .house-call
+    margin: 45px 0
+
+  .advantages-my-box
+    padding: 15px
+    font-size: 13px
+    &__icon
+      margin: 0 auto 10px
+
+  .indicators-img
+    min-width: 600px
+    img
+      min-width: 800px
+      margin: 30px 0 -40px -114px
+
+  .preparations
+    margin: 0 0 40px
+
+  .seo-section
+    padding: 70px 0 30px
+
+  .doctors
+    padding: 50px 0
+
+  .doctors-box h3
+    font-size: 18px
+
+  .td
+    &:first-child
+      width: 60%
+    &:last-child
+      width: calc(40% - 2px)
+
+  .tbody .td
+    &:first-child
+      width: 61%
+    &:last-child
+      width: calc(39% - 2px)
+
+  .prices
+    margin: 0 0 58px
+
+  .question
+    margin: 50px 0
+
+  .accordion
+    margin: 36px auto 0
+    padding: 15px 23px
+
+  .history-clients
+    padding: 47px 0 61px
+    h2
+      margin: 0 auto 28px
+
+  .accordion .card
+    padding: 15px 30px 13px 0
+
+  .accordion .card-body
+    padding: 10px 0 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+  .name-company
+    display: none
+
+  .phone
+    font-size: 15px
+
+  .header-box
+    &__icon
+      width: 13px
+      height: 14px
+      min-width: 13px
+      margin: 2px 11px 0 0
+    &__body
+      width: calc(100% - 13px)
+      padding: 0 0 0 11px
+
+  .logo
+    max-width: 103px
+
+  header
+    .btn-call
+      margin: 0 0 0 auto
+
+    .menu
+      padding: 10px
+      font-size: 10px
+      li
+        a
+          padding: 0 5px
+
+  h1
+    font-size: 26px
+    line-height: 116.2%
+
+  .home
+    .box-text
+      margin: 19px 0 15px
+
+  .home-content
+    padding: 20px
+
+  .house-call
+    position: relative
+    margin: 75px 0 48px
+    &__image
+      max-width: 100%
+      &:before
+        display: none
+      img
+        margin: -58px auto 0
+    &__content
+      position: initial
+      width: 100%
+      padding: 38px 20px
+      text-align: center
+      .btn
+        margin: 0 auto
+    .box-text
+      margin: 21px auto 18px
+
+  .stages-exit-wrapper
+    justify-content: center
+
+  .stages-exit-box
+    max-width: 33.3%
+    margin: 0 0 35px
+    &:nth-child(3)
+      &:before
+        display: none
+    &__text
+      max-width: 140px
+      margin: 0 auto
+
+  .advantages-my
+    margin: 20px 0 47px
+    h2
+      margin: 0 auto 19px
+      text-align: center
+
+  .indicators-content
+    padding: 42px 0 21px
+    h2
+      text-align: center
+      margin: 0 auto 36px
+
+  .indicators-img
+    min-width: auto
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%,0)
+      border-radius: 5px
+      min-width: 1000px
+      height: 100%
+      background: url("../img/bg2.png") no-repeat center
+        size: cover
+    &:before
+      width: 100%
+      min-width: 1000px
+      height: 70px
+      left: 50%
+      transform: translate(-50%,0)
+      top: -1px
+      bottom: auto
+      background: #fff
+      clip-path: polygon(100% 0, 0 0, 0 100%)
+      z-index: 1
+    img
+      margin: -40px -30px 12px
+
+  .seo-section
+    padding: 50px 0
+    h2
+      margin: 0 0 17px
+
+  .preparations
+    margin: 0 0 74px
+    .box-text
+      margin: 0 0 28px
+
+  .doctors
+    padding: 42px 0 50px
+
+  .doctors-box
+    margin: 0 auto 40px
+
+  .certificates
+    padding: 61px 0 65px
+
+
+  .certificate-box
+    max-width: 216px
+    margin: 30px 0 0
+
+  .td
+    &:first-child
+      width: 50%
+    &:last-child
+      width: calc(50% - 2px)
+
+  .tbody
+    .td
+      &:first-child
+        width: 50%
+      &:last-child
+        width: calc(50% - 2px)
+
+  .table-price
+    margin: 30px 0 0
+
+  .btn-all-price
+    margin: 14px auto 0
+
+  .callback-section__img
+    min-width: 500px
+
+  .callback-section__content
+    padding: 45px 0 67px
+
+  .question
+    margin: 46px 0 61px
+
+  .company-in-numbers
+    padding: 43px 0
+
+  .partners-box
+    margin: 0 0 25px
+
+  .partners
+    padding: 45px 0 30px
+    h2
+      margin: 0 auto 43px
+
+  .reviews
+    padding: 53px 0
+
+  .footer-bottom
+    padding: 15px 0 19px
+    text-align: center
+
+  footer
+    .logo
+      margin: 0 auto
+      max-width: 160px
+    .btn-call
+      max-width: 160px
+      margin: 20px auto 0
+    .menu
+      margin: 37px auto 29px
+    .header-box
+      justify-content: center
+      margin: 0 0 35px
+      &:first-child
+        margin: 28px 0 35px
+
+
+  .submenu-box
+    text-align: center
+    margin: 0 auto
+
+
+  .footer-top
+    padding: 59px 0 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .company-in-numbers
+    padding: 43px 0 10px
+
+  .header-top
+    padding: 5px 0 9px
+
+
+
+  header
+    .menu, .btn-call
+      display: none
+    .header-box
+      display: none
+      margin: 0 auto
+    .header-box-contacts
+      display: flex
+      //transform: translate(-50%,0)
+    .logo
+      margin: 0
+
+
+  .btn-burger
+    display: flex
+    margin: 0 0 0 100px
+
+  .home
+    margin: 0
+
+  .home-img
+    min-width: auto
+    max-width: none
+    width: 100%
+
+  .home-content
+    padding: 0 24px 43px
+    margin: -40px auto 0
+    height: auto
+    border-radius: 0 0 5px 5px
+    &:before
+      clip-path: polygon(100% 100%, 0 0, 0 100%)
+      height: 65px
+      width: 100%
+      position: absolute
+      left: 0
+      top: -65px
+      bottom: auto
+      background: $accent
+
+  .advantages-wrapper
+    display: block
+    background: transparent
+    padding: 0
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      height: 100%
+      width: 110px
+      transform: rotate(-180deg)
+      z-index: 1
+      background: linear-gradient(89deg, #F2F2F2 1.96%, rgba(242, 242, 242, 0) 142.87%)
+    .slick-arrow
+      width: 10px
+      height: 29px
+      fill: #C7C7C7
+    .slick-next
+      right: 5px
+    .slick-prev
+      left: 5px
+    .slick-disabled
+      opacity: 0
+    .advantages-box
+      display: flex
+
+  .advantages-box
+    width: 272px
+    background: #fff
+    margin: 0 8px 0 0
+    padding: 43px 26px 34px 27px
+
+
+
+  .around-the-clock
+    right: 0
+    top: -24px
+
+  .house-call
+    h2
+      font-size: 21px
+      line-height: normal
+
+  .house-call__image
+    height: 215px
+    img
+      max-width: 270px
+      margin: -53px auto 0
+
+  .around-the-clock
+    right: 15px
+
+  .indicators-img
+    img
+      min-width: 600px
+
+  .certificate-wrapper
+    position: relative
+    &:before, &:after
+      content: ''
+      position: absolute
+      height: 100%
+      width: 110px
+      z-index: 1
+      background: linear-gradient(89deg, #F2F2F2 1.96%, rgba(242, 242, 242, 0) 142.87%)
+    &:before
+      left: 0
+    &:after
+      transform: rotate(-180deg)
+      right: 0
+      background: linear-gradient(89deg, #F2F2F2 1.96%, rgba(242, 242, 242, 0) 142.87%)
+    .slick-arrow
+      width: 10px
+      height: 29px
+      z-index: 2
+    .slick-prev
+      left: 20px
+    .slick-next
+      right: 20px
+
+  .certificate-box
+    width: 216px
+    margin: 0 2.5px
+
+  .certificates
+    h2
+      margin: 0 auto 30px
+      max-width: 260px
+
+  .prices
+    h2
+      max-width: 250px
+      margin: 0 auto
+
+  .thead .td:last-child
+    display: none
+
+  .td
+    width: 100%
+    &:first-child
+      width: 100%
+
+  .tbody
+    padding: 18px 20px
+    .td
+      padding: 18px 0 0
+      &:first-child
+        width: 100%
+        margin: 0 0 5px
+      &:last-child
+        width: 100%
+        padding: 0 0 26px
+        flex-direction: column
+        align-items: flex-start
+    .btn
+      margin: 15px 0 0
+
+  .tr
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    &:last-child
+      .td
+        &:last-child
+          padding: 0
+
+  .accordion .btn-arrow
+    width: 19px
+    height: 10px
+
+  .slick-arrow
+    width: 10px
+    height: 29px
+
+  .slick-prev
+    left: -25px
+
+  .slick-next
+    right: -25px
+
+  .company-in-numbers__content
+    padding: 0
+    margin: 43px 0 0
+
+  .reviews-img
+    min-width: 786px
+
+  footer .menu
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    li
+      border: none
+      margin: 0 0 5px
+      &:last-child
+        margin: 0
+      a
+        padding: 0
+
+  .modal-content .close
+    right: 10px
+    top: 15px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px)
+  .stages-exit-box
+    max-width: 50%
+    &:before
+      right: -20px
+    &:nth-child(3)
+      &:before
+        display: flex
+    &:nth-child(4), &:nth-child(2)
+      &:before
+        display: none
+    &:last-child
+      max-width: none
+      .stages-exit-box__text
+        max-width: 280px
+
+  .advantages-my-box__icon
+    margin: 0 auto 24px
+
+  .indicators-img
+    min-height: 211px
+    &:after
+      min-width: 480px
+
+    img
+      min-width: 482px
+      margin: -44px -45px 12px
+
+  .preparations-box
+    padding: 18px 20px 12px
+
+  .doctors
+    .box-text
+      margin: 14px auto 29px
+      max-width: 235px
+    .btn
+      max-width: 216px
+      padding: 0
+      width: 100%
+
+  .doctors-box
+    h3
+      max-width: 235px
+      margin: 0 auto
+
+  .history-clients-slider
+    max-width: 278px
+    margin: 0 auto
+
+  .history-clients-slider-box
+    padding: 39px 30px 27px
+
+  .history-clients-slider-box__photo
+    margin: 0 auto 33px
+
+
+  .history-clients-slider-box__body
+    width: 100%
+    padding: 0
+
+  .video-box
+    height: 184px
+
+  .partners-box
+    .box-text
+      max-width: 160px
+      margin: 0 auto
+
+@media only screen and (max-width : 480px)
+  .btn-burger
+    margin: 0 0 0 70px
+
+  .home-content:before
+    top: -64px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 420px)
+  .container
+    max-width: 376px
+    padding: 0 24px
+
+  .row
+    margin: 0 -4px
+
+  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+    padding: 0 4px
+
+  .btn-burger
+    margin: 0 0 0 40px
+
+
+
+@media only screen and (max-width : 370px)
+  .indicators-img
+    min-height: 180px
+    img
+      min-width: 360px
+
+  .btn-burger
+    margin: 0 0 0 15px
+
+  .home-content
+    margin: -20px auto 0
+
+
+@media only screen and (max-width : 330px)
+  .btn-burger
+    margin: 0 0 0 5px
+
+  .logo
+    max-width: 90px
+
+

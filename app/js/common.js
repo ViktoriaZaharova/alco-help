@@ -12,8 +12,6 @@ $('.submenu-item__links').on('click', function (e) {
 
 
 $('.dropdown-services .dropdown-menu').on('click', function(event){
-    // The event won't be propagated up to the document NODE and
-    // therefore delegated events won't be fired
     event.stopPropagation();
 });
 
@@ -25,3 +23,27 @@ $('.btn-close').on('click', function (e) {
     e.preventDefault();
     $('.mobile-menu').fadeOut();
 });
+
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 768) {
+        $('.advantages-wrapper:not(.slick-initialized)').slick({
+            infinite: false,
+            slidesToShow: 1,
+            variableWidth: true,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
+        });
+        $('.certificate-wrapper:not(.slick-initialized)').slick({
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
+        });
+    } else {
+        $(".advantages-wrapper.slick-initialized").slick("unslick");
+        $(".certificate-wrapper.slick-initialized").slick("unslick");
+    }
+});
+// slick active
