@@ -25,10 +25,58 @@
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/modal.css">
 
 </head>
 
 <body>
+
+<div class="mobile-menu">
+  <div class="mobile-menu__head">
+    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+    <a href="#" class="btn btn-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </a>
+  </div>
+  <div class="mobile-menu__body">
+    <ul class="menu">
+      <li><a href="#">Лечение алкоголизма</a></li>
+      <li><a href="#">Вывод из запоя</a></li>
+      <li><a href="#">Кодирование</a></li>
+      <li><a href="#prices" class="go_to">Цены</a></li>
+    </ul>
+
+    <div class="header-box">
+      <div class="header-box__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+      </div>
+      <div class="header-box__text">
+        <a href="tel:+78129842275" class="phone">8 (812) 984-22-75</a>
+        <a href="mailto:info@alco-help.ru" class="mail">info@alco-help.ru</a>
+      </div>
+    </div>
+
+    <div class="header-box">
+      <div class="header-box__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#location"></use>
+        </svg>
+      </div>
+      <div class="header-box__text">
+        <p>Санкт-Петербург</p>
+        <span>ул. Ушинского, 2 корп. 1</span>
+      </div>
+    </div>
+
+    <a href="#" class="btn btn-accent btn-call" data-toggle="modal" data-target="#callbackModal">Оставить
+      заявку</a>
+  </div>
+</div>
 
 <!--### HEADER ###-->
 <header>
@@ -91,7 +139,8 @@
             <div class="dropdown-menu">
               <ul class="submenu">
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Лечение алкоголизма</a>
+                  <a href="#" class="submenu-item__links"><span class="submenu-text">Лечение алкоголизма</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
                   <ul class="dropdown-menu__sub">
                     <li><a href="#">1</a></li>
                     <li><a href="#">1</a></li>
@@ -99,7 +148,8 @@
                   </ul>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Вывод из запоя на дому</a>
+                  <a href="#" class="submenu-item__links"><span class="submenu-text">Вывод из запоя на дому</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
                   <ul class="dropdown-menu__sub">
                     <li><a href="#">2</a></li>
                     <li><a href="#">2</a></li>
@@ -107,52 +157,65 @@
                   </ul>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Кодирование от
-                    алкоголизма</a>
+                  <a href="#" class="submenu-item__links"><span class="submenu-text">Кодирование от
+                    алкоголизма</span> <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
                   <ul class="dropdown-menu__sub">
-                    <li><a href="#"></a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">211</a></li>
                   </ul>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Комплексное лечение</a>
+                  <a href="#" class="submenu-item__links">
+                    <span class="submenu-text">Комплексное лечение</span> <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span> </a>
                   <ul class="dropdown-menu__sub">
                     <li><a href="#">33</a></li>
                   </ul>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Снять похмелье
-                    (детоксикация)</a>
+                  <a href="#" class="submenu-item__links">
+                    <span class="submenu-text">Снять похмелье
+                    (детоксикация)</span>
+                    <span class="btn-arrow"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
                   <ul class="dropdown-menu__sub">
                     <li><a href="#">4</a></li>
                   </ul>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Капельница на дому</a>
+                  <a href="#" class="submenu-item__links"><span class="submenu-text">Капельница на дому</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
                   <ul class="dropdown-menu__sub">
                     <li><a href="#">656</a></li>
                   </ul>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Нарколог на дом</a>
+                  <a href="#" class="submenu-item__links"><span class="submenu-text">Нарколог на дом</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
                   <ul class="dropdown-menu__sub">
                     <li><a href="#">32</a></li>
                   </ul>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Психологическая
-                    помощь</a>
+                  <a href="#" class="submenu-item__links"><span class="submenu-text">Психологическая
+                    помощь</span> <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
                   <ul class="dropdown-menu__sub">
                     <li><a href="#">1</a></li>
                   </ul>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Круглосуточная скорая наркологическая помощь</a>
+                  <a href="#" class="submenu-item__links"><span class="submenu-text">Круглосуточная скорая наркологическая помощь</span>
+                    <span class="btn-arrow"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
                   <ul class="dropdown-menu__sub">
                     <li><a href="#">23</a></li>
                   </ul>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Дополнительные услуги</a>
+                  <a href="#" class="submenu-item__links"><span class="submenu-text">Дополнительные услуги</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
                   <ul class="dropdown-menu__sub">
                     <li><a href="#">556</a></li>
                     <li><a href="#">556</a></li>
@@ -160,7 +223,8 @@
                   </ul>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-item__links">Блог</a>
+                  <a href="#" class="submenu-item__links"><span class="submenu-text">Блог</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
                   <ul class="dropdown-menu__sub">
                     <li><a href="#">32</a></li>
                     <li><a href="#">32</a></li>
@@ -1124,7 +1188,8 @@
       <div class="row">
         <div class="col-12 col-md-4 col-lg-2">
           <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
-          <a href="#" class="btn btn-accent btn-call" data-toggle="modal" data-target="#callbackModal">Оставить заявку</a>
+          <a href="#" class="btn btn-accent btn-call" data-toggle="modal" data-target="#callbackModal">Оставить
+            заявку</a>
         </div>
 
         <div class="col-12 col-md-8 col-lg-7">
@@ -1195,6 +1260,64 @@
   </div>
 </footer>
 <!--### FOOTER END ###-->
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <h5 class="modal-title">Заполните форму</h5>
+        <form method="post" class="form">
+          <label>
+            <input type="text" placeholder="Ваше имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Телефон" name="phone">
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" class="inp-check" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">О Я прочитал и согласен с Политикой обработки персональных данных</span>
+          </label>
+
+          <button type="submit" class="btn btn-accent">Отправить заявку</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <h5 class="modal-title">Спасибо!</h5>
+        <div class="box-text">
+          <p>мы свяжемся с вами в ближайшее время</p>
+        </div>
+
+        <a href="#" class="btn btn-accent" data-dismiss="modal" aria-label="Close">Закрыть</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 <script src="js/jquery.min.js"></script>
 
