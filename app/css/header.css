@@ -163,40 +163,51 @@
   overflow: hidden; }
   .submenu li a {
     color: rgba(35, 35, 35, 0.87); }
-
-.submenu-item__links {
-  padding: 12px 19px 12px 31px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .submenu-item__links:hover {
-    background: #7CD54C;
-    color: #fff; }
-    .submenu-item__links:hover .btn-arrow {
-      fill: #fff; }
-  .submenu-item__links .btn-arrow {
+  .submenu li > a {
+    padding: 12px 19px 12px 31px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    fill: #C7C7C7;
-    width: 12px;
-    min-width: 12px;
-    height: 7px; }
-
-.submenu-item__links.open .btn-arrow {
-  fill: #fff; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .submenu li > a:hover {
+      background: #7CD54C;
+      color: #fff; }
+      .submenu li > a:hover .btn-arrow {
+        fill: #fff; }
+    .submenu li > a .btn-arrow {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      fill: #C7C7C7;
+      width: 12px;
+      min-width: 12px;
+      height: 7px; }
+    .submenu li > a .open .btn-arrow {
+      fill: #fff; }
+  .submenu > li {
+    width: 100%;
+    position: relative; }
+    .submenu > li:before {
+      content: '';
+      position: absolute;
+      left: 31px;
+      bottom: 0;
+      width: calc(100% - 31px - 39px);
+      height: 1px;
+      background: #EEEEEE; }
+    .submenu > li:hover:before {
+      opacity: 0; }
 
 .dropdown-menu__sub {
   font-size: 13px; }
@@ -205,20 +216,6 @@
     .dropdown-menu__sub li a:hover {
       background: #7CD54C;
       color: #fff; }
-
-.submenu-item {
-  width: 100%;
-  position: relative; }
-  .submenu-item:before {
-    content: '';
-    position: absolute;
-    left: 31px;
-    bottom: 0;
-    width: calc(100% - 31px - 39px);
-    height: 1px;
-    background: #EEEEEE; }
-  .submenu-item:hover:before {
-    opacity: 0; }
 
 /*==========  header end  ==========*/
 /*==========  mobile-menu  ==========*/

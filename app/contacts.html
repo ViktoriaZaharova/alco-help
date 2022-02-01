@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Наркологический центр - Надежда</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/contacts.css">
+  <link rel="stylesheet" href="css/media.css">
+
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="mobile-menu__head">
+    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+    <a href="#" class="btn btn-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </a>
+  </div>
+  <div class="mobile-menu__body">
+    <ul class="menu">
+      <li><a href="#">Лечение алкоголизма</a></li>
+      <li><a href="#">Вывод из запоя</a></li>
+      <li><a href="#">Кодирование</a></li>
+      <li><a href="index.html#prices" class="go_to">Цены</a></li>
+    </ul>
+
+    <div class="header-box">
+      <div class="header-box__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+      </div>
+      <div class="header-box__text">
+        <a href="tel:+78129842275" class="phone">8 (812) 984-22-75</a>
+        <a href="mailto:info@alco-help.ru" class="mail">info@alco-help.ru</a>
+      </div>
+    </div>
+
+    <div class="header-box">
+      <div class="header-box__icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#location"></use>
+        </svg>
+      </div>
+      <div class="header-box__text">
+        <p>Санкт-Петербург</p>
+        <span>ул. Ушинского, 2 корп. 1</span>
+      </div>
+    </div>
+
+    <a href="#" class="btn btn-accent btn-call" data-toggle="modal" data-target="#callbackModal">Оставить
+      заявку</a>
+  </div>
+</div>
+
+<!--### HEADER ###-->
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+          <div class="name-company">Наркологический
+            центр
+          </div>
+
+          <div class="header-box">
+            <div class="header-box__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            <div class="header-box__text">
+              <p>Санкт-Петербург</p>
+              <span>ул. Ушинского, 2 корп. 1</span>
+            </div>
+          </div>
+
+          <div class="header-box header-box-contacts">
+            <div class="header-box__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <div class="header-box__text">
+              <a href="tel:+78129842275" class="phone">8 (812) 984-22-75</a>
+              <a href="mailto:info@alco-help.ru" class="mail">info@alco-help.ru</a>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-accent btn-call" data-toggle="modal" data-target="#callbackModal">Оставить
+            заявку</a>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="dropdown dropdown-services">
+            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-my btn-blue" type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="dropdown-toggle__text">Услуги</span>
+              <span class="btn-arrow"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+            </button>
+            <div class="dropdown-menu">
+              <ul class="submenu">
+                <li>
+                  <a href="#"><span class="submenu-text">Лечение алкоголизма</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">1</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span class="submenu-text">Вывод из запоя на дому</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span class="submenu-text">Кодирование от
+                    алкоголизма</span> <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">211</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="submenu-text">Комплексное лечение</span> <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span> </a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">33</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="submenu-text">Снять похмелье
+                    (детоксикация)</span>
+                    <span class="btn-arrow"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">4</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span class="submenu-text">Капельница на дому</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">656</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span class="submenu-text">Нарколог на дом</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">32</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span class="submenu-text">Психологическая
+                    помощь</span> <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">1</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span class="submenu-text">Круглосуточная скорая наркологическая помощь</span>
+                    <span class="btn-arrow"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">23</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span class="submenu-text">Дополнительные услуги</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">556</a></li>
+                    <li><a href="#">556</a></li>
+                    <li><a href="#">556</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span class="submenu-text">Блог</span> <span
+                      class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span></a>
+                  <ul class="dropdown-menu__sub">
+                    <li><a href="#">32</a></li>
+                    <li><a href="#">32</a></li>
+                    <li><a href="#">32</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-9">
+          <ul class="menu">
+            <li><a href="#">Лечение алкоголизма</a></li>
+            <li><a href="#">Вывод из запоя</a></li>
+            <li><a href="#">Кодирование</a></li>
+            <li><a href="index.html#prices" class="go_to">Цены</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--### HEADER end ###-->
+
+<div class="navigation-page">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-7 col-xl-10 col-md-8">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col-5 col-xl-2 col-md-4">
+        <div class="dropdown dropdown-content">
+          <button class="btn btn-secondary dropdown-toggle dropdown-toggle-my btn-blue" type="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="dropdown-toggle__text">Содержание</span>
+            <span class="dropdown-toggle__text text-hidden">Скрыть</span>
+            <span class="btn-arrow"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+          </button>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu__sub">
+              <li><a href="#">Лечение алкоголизма</a></li>
+              <li><a href="#">Вывод из запоя на дому</a></li>
+              <li><a href="#">Кодирование от</a></li>
+              <li><a href="#">алкоголизма</a></li>
+              <li><a href="#">Комплексное лечение</a></li>
+              <li><a href="#">Снять похмелье </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--### SECTION contacts-section ###-->
+<main class="contacts-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="service-section-wrapper contacts-section-wrapper">
+          <div class="contacts-section-content">
+            <div class="around-the-clock">24/7</div>
+
+            <h1>Контактная информация</h1>
+
+            <div class="company-info">
+
+            <div class="company-name">Наркологическая клиника “Надежда” – Лечение алкоголизма</div>
+
+            <div class="schedule">
+              <p><strong class="color-accent">Работаем круглосуточно:</strong> 24 часа 7 дней в неделю. Анонимность
+                гарантирована.</p>
+            </div>
+            </div>
+
+
+            <div class="header-box">
+              <div class="header-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <div class="header-box__text">
+                <p>195267 ул. Ушинского, дом 2 корп. 1 <br>Санкт-Петербург,</p>
+              </div>
+            </div>
+
+            <div class="header-box">
+              <div class="header-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <div class="header-box__text">
+                <a href="tel:+78129842275" class="phone">8 (812) 984-22-75</a>
+              </div>
+            </div>
+
+
+            <div class="header-box">
+              <div class="header-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+              </div>
+              <div class="header-box__text">
+                <a href="mailto:info@alco-help.ru" class="mail">info@alco-help.ru</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contacts-section-map">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCU54LTMHD" frameborder="1"
+                    allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+
+        </div>
+
+        <div class="service-section-wrapper requisites-wrapper">
+          <div class="requisites-col">
+            <h3>Наши реквизиты</h3>
+            <ul class="list-data">
+              <li><strong>ОГРН:</strong> 1117847020070;</li>
+              <li><strong>ИНН/КПП:</strong> 7842445116/78040100;</li>
+              <li><strong>Название организации:</strong> ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ “НАДЕЖДА”;</li>
+              <li><strong>Почтовый индекс:</strong> 192567;</li>
+            </ul>
+          </div>
+          <div class="requisites-col">
+            <div class="box-text">
+              <p><strong>Адрес:</strong> г. Санкт-Петербург, ул. Ушинского, дом 2, корпус 1, литера А, помещение 9Н.</p>
+              <p><strong>Дата регистрации:</strong> 26.01.2011;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--### SECTION service-section END ###-->
+
+<!--### SECTION house-call ###-->
+<section class="house-call">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="house-call-wrapper">
+          <div class="house-call__image">
+            <img src="img/women.png" alt="">
+          </div>
+
+          <div class="house-call__content">
+            <h2>Вывод из запоя на дому</h2>
+            <div class="box-text"><p>Lorem ipsum dolor sit amet, consectetur
+              Lorem ipsum dolor sit amet, consectetur </p></div>
+
+            <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Вызвать врача на дом</a>
+            <div class="around-the-clock">24/7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="stages-exit-text stages-exit-text-v2 mb-0">
+          <h3 class="color-grey">Зоны выезда по Ленобласти с ценами</h3>
+          <div class="box-text">
+            <p>Выезд — в течение часа, в любые районы Санкт-Петербурга и его пригороды. Нажмите на флажок города, чтобы
+              посмотреть стоимость выезда.</p>
+
+            <p>Приём врача в медицинском центре осуществляется только по предварительной записи.Стоимость выезда по
+              Санкт-Петербургу включена в цену услуги. Цены на выезд по области см. на карте ниже ↓</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION house-call END ###-->
+
+
+<!--### SECTION areas end ###-->
+<section class="areas">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="areas-wrapper">
+          <div class="areas-map"><img src="img/map-img.png" alt=""></div>
+          <div class="areas-content">
+            <div class="areas-content__head">
+              <h3>Основные районы Ленобласти с временем выезда и ценами</h3>
+            </div>
+            <div class="areas-content__body">
+              <ul class="list-areas">
+                <li><p>Кронштадт </p><span>1,5 часа</span></li>
+                <li><p>Сестрорецк</p><span>1,5 часа</span></li>
+                <li><p>Пушкин </p><span>1,5 часа</span></li>
+                <li><p>Петергоф</p><span>1,5 часа</span></li>
+                <li><p>Колпино </p><span>1,5 часа</span></li>
+                <li><p>Павловск </p><span>1,5 часа</span></li>
+                <li><p>Петергоф </p><span>1,5 часа</span></li>
+                <li><p>Коммунар </p><span>1,5 часа</span></li>
+                <li><p>Всеволожск</p><span>1,5 часа</span></li>
+                <li><p>Колтуши</p><span>1,5 часа</span></li>
+                <li><p>Янино</p><span>1,5 часа</span></li>
+                <li><p>Сертолово </p><span>1,5 часа</span></li>
+                <li><p>Девяткино</p><span>1,5 часа</span></li>
+                <li><p>Отрадное</p><span>1,5 часа</span></li>
+              </ul>
+              <ul class="list-areas">
+                <li><p>Никольское</p><span>1,5 часа</span></li>
+                <li><p>Красное село</p><span>1,5 часа</span></li>
+                <li><p>Шушары</p><span>1,5 часа</span></li>
+                <li><p>Зеленогорск </p><span>2 часа</span></li>
+                <li><p>Ломоносов</p><span>2 часа</span></li>
+                <li><p>Гатчина</p><span>2 часа</span></li>
+                <li><p>Сосново </p><span>2 часа</span></li>
+                <li><p>Тосно</p><span>2 часа</span></li>
+                <li><p>Шлиссельбург</p><span>2 часа</span></li>
+                <li><p>Кировск</p><span>2 часа</span></li>
+                <li><p>Павлово</p><span>2 часа</span></li>
+                <li><p>Мга</p><span>от 2,5 часов</span></li>
+                <li><p>Выборг</p><span>от 2,5 часов</span></li>
+                <li><p>Приморск</p><span>от 2,5 часов</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 d-flex d-sm-none">
+        <a href="#" class="btn btn-blue btn-toggle">
+          <span class="btn-text">Весь список</span>
+          <span class="btn-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION areas end ###-->
+
+<!--### SECTION callback-section ###-->
+<section class="callback-section bg-white">
+  <div class="container">
+    <div class="row align-items-stretch">
+      <div class="col-12 col-md-6 d-none d-md-block">
+        <div class="callback-section__img"><img src="img/callback-img3.jpeg" alt=""></div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="callback-section__content">
+          <h2>Заполните форму</h2>
+          <form method="post" class="form">
+            <label>
+              <input type="text" placeholder="Как долго наблюдается проблема?" name="time">
+            </label>
+            <label>
+              <input type="text" placeholder="Есть ли хронические болезни" name="diagnoz">
+            </label>
+            <label>
+              <input type="text" placeholder="Возраст употребляющего" name="age">
+            </label>
+            <label>
+              <input type="text" placeholder="Телефон" name="phone">
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" class="inp-check" name="checkbox" checked>
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">О Я прочитал и согласен с Политикой обработки персональных данных</span>
+            </label>
+
+            <button type="submit" class="btn btn-accent">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION callback-section end ###-->
+
+
+<!--### FOOTER  ###-->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-2">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+          <a href="#" class="btn btn-accent btn-call" data-toggle="modal" data-target="#callbackModal">Оставить
+            заявку</a>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <ul class="menu">
+            <li><a href="#">Лечение алкоголизма</a></li>
+            <li><a href="#">Вывод из запоя</a></li>
+            <li><a href="#">Кодирование</a></li>
+            <li><a href="#prices" class="go_to">Цены</a></li>
+          </ul>
+
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <ul class="submenu-box">
+                <li><a href="#">Лечение алкоголизма</a></li>
+                <li><a href="#">Вывод из запоя на дому</a></li>
+                <li><a href="#">Кодирование от алкоголизма</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <ul class="submenu-box">
+                <li><a href="#">Капельница на дому</a></li>
+                <li><a href="#">Нарколог на дом</a></li>
+                <li><a href="#">Психологическая помощь</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3">
+
+          <div class="header-box">
+            <div class="header-box__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <div class="header-box__text">
+              <a href="tel:+78129842275" class="phone">8 (812) 984-22-75</a>
+              <a href="mailto:info@alco-help.ru" class="mail">info@alco-help.ru</a>
+            </div>
+          </div>
+
+
+          <div class="header-box">
+            <div class="header-box__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            <div class="header-box__text">
+              <p>Санкт-Петербург</p>
+              <span>ул. Ушинского, 2 корп. 1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a href="#" target="_blank" class="color-grey links-politics">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--### FOOTER END ###-->
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <h5 class="modal-title">Заполните форму</h5>
+        <form method="post" class="form">
+          <label>
+            <input type="text" placeholder="Ваше имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Телефон" name="phone">
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" class="inp-check" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">О Я прочитал и согласен с Политикой обработки персональных данных</span>
+          </label>
+
+          <button type="submit" class="btn btn-accent">Отправить заявку</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <h5 class="modal-title">Спасибо!</h5>
+        <div class="box-text">
+          <p>мы свяжемся с вами в ближайшее время</p>
+        </div>
+
+        <a href="#" class="btn btn-accent" data-dismiss="modal" aria-label="Close">Закрыть</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+<script src="js/common.js"></script>
+<script src="js/services.js"></script>
+
+</body>
+</html>

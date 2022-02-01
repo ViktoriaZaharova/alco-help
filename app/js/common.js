@@ -5,7 +5,7 @@ $('.history-clients-slider').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
 });
 
-$('.submenu-item__links').on('click', function (e) {
+$('.submenu > li > a').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('open').siblings('.dropdown-menu__sub').slideToggle();
 });
@@ -63,25 +63,3 @@ $(document).ready(function () {
 });
 //плавный скролл end
 
-// show list all
-$('.btn-toggle').on('click', function(e){
-    e.preventDefault();
-
-    var
-        $this = $(this),
-        content = $(this).parents().find('.list-areas');
-
-
-    if(!$this.hasClass('trigger')){
-        $this.addClass('trigger');
-        $this.find('.btn-text').html('Скрыть');
-
-        content.slideDown();
-    } else {
-        $this.removeClass('trigger');
-        $this.find('.btn-text').html('Весь список');
-
-        content.slice(1).slideUp();
-    }
-});
-// show list all

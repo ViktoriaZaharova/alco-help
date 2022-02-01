@@ -147,29 +147,44 @@
   li
     a
       color: rgba(35, 35, 35, 0.87)
+    > a
+      padding: 12px 19px 12px 31px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      &:hover
+        background: $green
+        color: #fff
+        .btn-arrow
+          fill: #fff
+      .btn-arrow
+        display: flex
+        align-items: center
+        justify-content: center
+        fill: #C7C7C7
+        width: 12px
+        min-width: 12px
+        height: 7px
+      .open
+        .btn-arrow
+          fill: #fff
+  > li
+    width: 100%
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 31px
+      bottom: 0
+      width: calc(100% - 31px - 39px)
+      height: 1px
+      background: #EEEEEE
+    &:hover
+      &:before
+        opacity: 0
+
 
 .submenu-item__links
-  padding: 12px 19px 12px 31px
-  display: flex
-  align-items: center
-  justify-content: space-between
-  &:hover
-    background: $green
-    color: #fff
-    .btn-arrow
-      fill: #fff
-  .btn-arrow
-    display: flex
-    align-items: center
-    justify-content: center
-    fill: #C7C7C7
-    width: 12px
-    min-width: 12px
-    height: 7px
-
-.submenu-item__links.open
-  .btn-arrow
-    fill: #fff
 
 .dropdown-menu__sub
   font-size: 13px
@@ -181,19 +196,7 @@
         background: $green
         color: #fff
 .submenu-item
-  width: 100%
-  position: relative
-  &:before
-    content: ''
-    position: absolute
-    left: 31px
-    bottom: 0
-    width: calc(100% - 31px - 39px)
-    height: 1px
-    background: #EEEEEE
-  &:hover
-    &:before
-      opacity: 0
+
 /*==========  header end  ==========*/
 
 

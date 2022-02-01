@@ -247,6 +247,13 @@ button, .btn {
     background: #2B51B5;
     color: #fff; }
 
+.btn-white {
+  background: #fff;
+  color: #232323; }
+  .btn-white:hover {
+    color: #2B51B5;
+    background: #fff; }
+
 .btn-arrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,6 +300,10 @@ h3 {
   font-weight: bold;
   width: 100%; }
 
+strong {
+  font-weight: bold;
+  display: inline-block; }
+
 .bg-white {
   background: #fff; }
 
@@ -310,6 +321,15 @@ h3 {
   font-size: 15px; }
   .links-details:hover {
     color: #2B51B5; }
+
+.mb-32 {
+  margin-bottom: 32px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
 
 .mb-14 {
   margin-bottom: 14px; }

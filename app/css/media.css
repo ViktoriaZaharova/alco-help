@@ -68,7 +68,7 @@
   .areas-content__body {
     padding: 20px 10px; }
   .areas {
-    margin: 0 0 50px; } }
+    padding: 0 0 50px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -113,7 +113,8 @@
       position: initial;
       width: 100%;
       padding: 38px 20px;
-      text-align: center; }
+      text-align: center;
+      border-radius: 0; }
       .house-call__content .btn {
         margin: 0 auto; }
     .house-call .box-text {
@@ -278,7 +279,30 @@
   .areas-content {
     width: 100%; }
     .areas-content__head {
-      padding: 17px 23px; } }
+      padding: 17px 23px; }
+  .requisites-wrapper {
+    padding: 37px 30px; }
+    .requisites-wrapper .box-text {
+      margin: 0; }
+  .about-section {
+    margin: 0 0 34px; }
+    .about-section h1 {
+      margin: 0 0 18px; }
+  .details-doctor-box__body {
+    padding: 29px 25px 25px; }
+  .details-doctor-box__head {
+    padding: 20px 22px; }
+  .list-specialization {
+    margin: 0 0 20px; }
+  .news-card__body {
+    padding: 36px 24px;
+    width: calc(100% - 270px); }
+  .news-card__img {
+    width: 270px; }
+  .news-card-100 .news-card__body {
+    padding: 38px 24px; }
+  .pagination-nav {
+    margin: 39px 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -486,7 +510,67 @@
   .stages-exit-text .list-arrow {
     margin: 30px 0 20px; }
   .price-service {
-    margin: 0 0 18px; } }
+    margin: 0 0 18px; }
+  .contacts-section-wrapper {
+    padding: 0; }
+    .contacts-section-wrapper .around-the-clock {
+      top: -20px;
+      right: 0; }
+  .contacts-section-content {
+    width: 100%;
+    padding: 38px 22px 35px; }
+  .company-info {
+    margin: 15px 0; }
+  .contacts-section-map {
+    width: 100%;
+    height: 261px;
+    border-radius: 5px; }
+  .requisites-wrapper {
+    margin: 42px 0 0;
+    padding: 37px 25px; }
+  .requisites-col {
+    width: 100%;
+    padding: 0 0 21px; }
+    .requisites-col:last-child {
+      padding: 23px 0 0;
+      border-top: 1px solid #2B51B5; }
+      .requisites-col:last-child:before {
+        display: none; }
+  .about-company {
+    margin: 0 0 31px;
+    max-width: none;
+    height: 293px; }
+  .warranty {
+    padding: 0 0 25px; }
+  .doctor-photo {
+    max-width: 280px;
+    margin: 0 auto 25px;
+    height: auto; }
+  .doctor-section-wrapper {
+    padding: 43px 24px 45px; }
+    .doctor-section-wrapper .position {
+      margin: 13px 0 15px; }
+  .specialization {
+    margin: 0 0 22px; }
+  .specialization-item {
+    padding: 10px 20px; }
+  .mb-32 {
+    margin-bottom: 20px; }
+  .list-specialization {
+    margin: 0; }
+  .details-doctor-box {
+    margin: 30px 0 0; }
+    .details-doctor-box:last-child {
+      margin: 30px 0 0; }
+  .details-doctor-box__body .box-text ul li {
+    margin: 0 0 20px; }
+    .details-doctor-box__body .box-text ul li:last-child {
+      margin: 0 0 20px; }
+  .news-card__img {
+    width: 100%;
+    height: auto; }
+  .news-card__body {
+    width: 100%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -550,7 +634,32 @@
     display: none;
     width: 100%; }
     .list-areas:nth-child(-n+1) {
-      display: block; } }
+      display: block; }
+  .requisites-wrapper {
+    width: calc(100% + 50px);
+    margin: 42px -25px 0; }
+  .warranty-box {
+    padding: 34px 25px 37px; }
+    .warranty-box h3 {
+      min-height: auto;
+      margin: 0 0 26px; }
+      .warranty-box h3 br {
+        display: none; }
+  .warranty h2 {
+    margin: 0 auto 34px; }
+  .doctor-section-wrapper .box-text {
+    margin: 0; }
+  .news-card__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .news-card .links-details {
+    width: 100%;
+    margin: 23px 0 0; } }
 
 @media only screen and (max-width: 480px) {
   .btn-burger {

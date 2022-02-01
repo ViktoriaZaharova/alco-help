@@ -1,0 +1,142 @@
+@import "vars"
+
+
+/*==========  section news  ==========*/
+.news-section
+  h1
+    margin: 0 0 19px
+
+.news-card
+  width: 100%
+  background: #fff
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 21px
+  border-radius: 5px
+  &:last-child
+    margin: 0
+  &__img
+    width: 348px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border-radius: 5px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: calc(100% - 348px)
+    padding: 42px 95px 35px 60px
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 22px
+  &__date
+    color: #A2A2A2
+    font-size: 12px
+  &__text
+    color: #575757
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 21px 0 0
+  .links-details
+    display: flex
+    align-items: center
+    font-size: 12px
+    &__icon
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 36px
+      height: 8px
+      fill: #7CD54C
+      margin: 0 0 0 8px
+
+.author-news
+  display: flex
+  align-items: center
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 46px
+    height: 46px
+    border-radius: 50%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: calc(100% - 46px)
+    padding: 0 0 0 20px
+  h4
+    font-weight: bold
+    color: #232323
+  p
+    color: #A2A2A2
+    font-size: 12px
+    margin: 4px 0 0
+
+.news-card-100
+  .news-card__body
+    width: 100%
+    padding: 42px 93px
+
+.pagination-nav
+  width: 100%
+  margin: 48px 0 58px
+
+.pagination
+  border: none
+    radius: 0
+  width: 100%
+  justify-content: center
+  align-items: center
+  font-size: 16px
+
+  .page-link
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0
+    border: none
+      radius: 50%
+    width: 25px
+    height: 25px
+    min-width: 25px
+    text-align: center
+    color: #929292
+    background: transparent
+
+  li
+    margin: 0 4px 0 0
+    &:last-child
+      margin: 0
+    &.active
+      .page-link
+        background: #fff
+        color: $accent
+    &:first-child, &:last-child
+      .page-link
+        border-radius: 50%
+  .page-link-arrow
+    background: #fff
+    padding: 8px
+    .svg-icon
+      fill: #929292
+    &:hover
+      background: $accent
+      .svg-icon
+        fill: #fff
+
+/*==========  section news end  ==========*/
