@@ -1,0 +1,81 @@
+/*==========  section about  ==========*/
+.about-section {
+  margin: 0 0 83px; }
+  .about-section h1 {
+    margin: 0 0 19px; }
+
+.about-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 407px;
+  width: 100%;
+  height: 363px;
+  background: #C4C4C4; }
+
+.about-content .box-text {
+  color: #575757; }
+
+.house-call-blue {
+  color: #fff; }
+  .house-call-blue .house-call__image:before {
+    background: #2B51B5; }
+  .house-call-blue .house-call__content {
+    background: #2B51B5; }
+  .house-call-blue h2 {
+    color: #fff;
+    margin: 0 0 44px; }
+
+.around-the-clock-white {
+  background: #fff;
+  color: #2B51B5; }
+
+.warranty {
+  padding: 24px 0 28px; }
+  .warranty h2 {
+    margin: 0 auto 42px; }
+
+.warranty-box {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  background: #fff;
+  padding: 38px 19px 50px;
+  border-radius: 5px; }
+  .warranty-box.bg-accent {
+    color: #fff;
+    background: #2B51B5; }
+    .warranty-box.bg-accent .box-text {
+      color: #fff; }
+    .warranty-box.bg-accent h3 {
+      color: rgba(255, 255, 255, 0.87); }
+  .warranty-box h3 {
+    min-height: 42px;
+    margin: 0 auto 16px; }
+  .warranty-box__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 25px;
+    height: 62px; }
+    .warranty-box__icon img {
+      max-height: 100%; }
+
+.company-in-numbers-two {
+  padding-top: 0; }
+
+/*==========  section about end  ==========*/

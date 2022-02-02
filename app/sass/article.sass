@@ -6,4 +6,85 @@
   height: 330px
   background: #C4C4C4
 
+.all-news
+  margin: 0 auto
+  padding: 0 70px
+
+.certificates-two
+  padding: 0
+  margin: 95px 0 114px
+
+.recommended-news
+  margin: 30px 0 70px
+  h2
+    margin: 0 0 46px
+    font-size: 24px
+
+.news-box
+  width: 100%
+  height: 100%
+  background: #fff
+  border-radius: 5px
+  overflow: hidden
+  &__img
+    width: 100%
+    height: 201px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    height: calc(100% - 201px)
+    padding: 23px 30px 15px
+    display: flex
+    flex-direction: column
+
+  .links-details
+    font-size: 12px
+    margin: auto 0 0
+    .svg-icon
+      width: 36px
+      height: 8px
+      fill: #7CD54C
+  &__title
+    font-size: 18px
+    font-weight: bold
+    color: #232323
+    max-width: 209px
+    &:hover
+      color: $accent
+  &__head
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin: 0 0 20px
+  &__date
+    color: #A2A2A2
+    font-size: 12px
+    margin: 6px 0 0
+  .box-text
+    font-size: 15px
+    color: #575757
+  &__text
+    margin: 0 0 18px
+  &.bg-accent
+    color: #fff
+    background: $accent
+    .news-box__body
+      height: 100%
+      .box-text
+        color: #fff
+    .news-box__title
+      color: #fff
+    .news-box__date
+      color: #fff
+    .links-details
+      color: #fff
+
 /*==========  section article end  ==========*/
